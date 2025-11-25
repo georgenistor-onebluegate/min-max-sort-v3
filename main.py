@@ -36,12 +36,12 @@ for i in range(0, int(len(a)/2)):
     if swap_max:
         a[index_max], a[size-1] = a[size-1], a[index_max]
 
-    if (i != 0) & (i % 1000 == 0):
-        print('cycle: ', i)
+    #if (i != 0) & (i % 1000 == 0):
+        #print('cycle: ', i)
 
-        end_time = time.time()
-        time_lapsed = end_time - start_time
-        print(time_lapsed)
+        #end_time = time.time()
+        #time_lapsed = end_time - start_time
+        #print(time_lapsed)
 
 
         start_time = time.time()
