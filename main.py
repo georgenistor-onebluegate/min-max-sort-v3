@@ -51,16 +51,18 @@ time_elapsed_full = end_time_full - start_time_full
 print('time elapsed algorithm: ', time_elapsed_full)
 print('### finishing sorting:')
 
-flag = 1
+flag = True
 i = 1
 while i < len(a):
     if a[i - 1] > a[i]:
-        flag = 0
+        flag = False
         break
     i += 1
 
 # printing result
-if flag == 1:
+if flag:
     print("TRUE, Array is sorted.")
 else:
     print("FALSE, Array is not sorted.")
+
+#print(a)
